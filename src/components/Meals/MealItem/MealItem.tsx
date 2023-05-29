@@ -1,14 +1,8 @@
 import React from 'react';
 import styles from './MealItem.module.css';
 import MealItemForm from './MealItemForm';
-interface mealItemProps {
-  price: number;
-  name: string;
-  description: string;
-  key: string;
-  id: string;
-}
-const MealItem: React.FC<mealItemProps> = (props) => {
+import itemInterface from '../../../models';
+const MealItem: React.FC<itemInterface> = (props) => {
   return (
     <li className={styles.meal}>
       <div>

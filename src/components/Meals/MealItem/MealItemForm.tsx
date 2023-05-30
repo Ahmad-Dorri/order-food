@@ -1,9 +1,13 @@
 import React from 'react';
 import styles from './MealItemForm.module.css';
 import Input from '../../UI/Input';
-const MealItemForm: React.FC<{ id: string }> = (props) => {
+
+const MealItemForm: React.FC<{ id: string; onAddItem: () => void }> = (
+  props
+) => {
   const submitFormHandler: any = (event: Event) => {
     event.preventDefault();
+    props.onAddItem();
   };
   return (
     <form onSubmit={submitFormHandler} className={styles.form}>

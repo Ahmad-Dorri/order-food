@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { useState } from 'react';
 import styles from './Input.module.css';
 interface InputProps {
   className?: string;

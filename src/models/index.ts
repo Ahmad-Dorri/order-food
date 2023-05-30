@@ -4,5 +4,6 @@ interface itemInterface {
   description: string;
   price: number;
   key: string;
+  amount: number;
 }
 export default itemInterface;
